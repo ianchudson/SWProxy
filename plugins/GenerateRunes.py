@@ -222,7 +222,7 @@ def parse_login_data(data):
                 monster_writer.writerows(monster_footer)
 
 
-    with open(str(wizard['wizard_id']) +"-optimizer.json", "w") as f:
+    with open(str(wizard['wizard_id']) + "-" + str(wizard['wizard_name'])  +"-optimizer.json", "w") as f:
         f.write(json.dumps(optimizer))
 
 
